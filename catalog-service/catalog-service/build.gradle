@@ -26,3 +26,9 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+bootBuildImage {
+	docker {
+		host = 'tcp://localhost:2375'
+	}
+}
