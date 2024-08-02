@@ -25,7 +25,7 @@ jobs:
         uses: anchore/scan-action@v3
         id: scan
         with:
-          path: "https://github.com/knxxxn/studycloud_native"
+          path: https://github.com/knxxxn/studycloud_native
           fail-build: false
           severity-cutoff: high
       - name: Upload vulnerability report
